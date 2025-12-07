@@ -16,7 +16,7 @@ The platform follows a classic 3-tier architecture:
 
 2.	Backend Layer → REST API (Node.js + Express )
 
-3.	Database Layer → SQL (PostgreSQL or MySQL)
+3.	Database Layer → Mongo DB
 
 Optional supporting components:
 ●	Email Service (Nodemailer / SMTP)
@@ -51,7 +51,7 @@ ________________________________________
                             | SQL Queries
                             v
 +-------------------------------------------------------------+
-|                          SQL Database                       |
+|                          MOngo DB                           |
 |     users, categories, products, carts, cart_items,         |
 |     orders, order_items, email_logs                         |
 +-------------------------------------------------------------+
@@ -237,7 +237,7 @@ ________________________________________
 1.	Frontend sends:
 
 POST /api/order/place
-2.	
+2.	
 Backend steps:
 
 ○	Validate cart
