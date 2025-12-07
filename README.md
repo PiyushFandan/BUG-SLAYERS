@@ -103,13 +103,6 @@ Responsibilities:
 
 ●	 Return authenticated user order history
 
-________________________________________
-3.3 Database Schema 
-   
-________________________________________
-
-
-
 
 3.4 Email Service 
 Triggered when an order is placed.
@@ -168,7 +161,7 @@ Cart Page Displays Items & Prices
 User Clicks "Place Order"
         |
         v
-Enter Delivery Details (if applicable)
+Enter Delivery Details
         |
         v
 Backend Validates Cart & Inventory
@@ -183,7 +176,7 @@ Order Confirmed and Stored in DB
 Show Order Confirmation Page
 ________________________________________
 4.2 Backend API Flow
-Client Request
+Client Request
       |
       |---> Security Check (x-api-key)
       |
